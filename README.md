@@ -11,9 +11,9 @@
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 
-:package: PgPubsub Spool [PG PubSub](https://www.npmjs.com/package/pg-pubsub)
+:package: PgPubsub Spool [PG Listen](https://github.com/andywer/pg-listen)
 
-Utilizes [PG PubSub](https://www.npmjs.com/package/pg-pubsub) to add a Fabrix Extension
+Utilizes [PG Listen](https://github.com/andywer/pg-listen) to add a Fabrix Extension
 
 
 ## Install

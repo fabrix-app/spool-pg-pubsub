@@ -1,8 +1,8 @@
 /**
  * PgPubsub Config
- * see link {https://www.npmjs.com/package/pg-pubsub}
+ * see link {https://github.com/andywer/pg-listen}
  */
 export const pgpubsub = {
-  uri: '',
+  uri: '', // connectionString
   options: {}
 }
