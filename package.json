@@ -44,6 +44,7 @@
     "@types/node": "~10.3.4",
     "mocha": "^6",
     "nyc": "^14.1.1",
+    "pg": "^7.12.1",
     "smokesignals": "^3.0.4",
     "source-map-support": "^0.5.13",
     "standard-version": "^7.0.0",
@@ -58,7 +59,8 @@
     "typescript-closure-compiler": "^1.8.11"
   },
   "peerDependencies": {
-    "@fabrix/fabrix": "^1.6.4"
+    "@fabrix/fabrix": "^1.6.4",
+    "pg": "^7.12.1"
   },
   "engines": {
     "node": ">= 7.6.0",
