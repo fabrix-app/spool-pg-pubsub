@@ -10,7 +10,7 @@ export class PgPubsubSpool extends ExtensionSpool {
   // public pgpubsub
   private _pgpubsub
 
-  public subscribers = new Set([])
+  public subscribers = new Map([])
 
   constructor(app) {
     super(app, {
@@ -41,11 +41,11 @@ export class PgPubsubSpool extends ExtensionSpool {
     return Utils.addChannel(this.app, name, fn)
   }
 
-  removeChannel(name) {
-    return Utils.removeChannel(this.app, name)
+  removeChannel(channel, fnName) {
+    return Utils.removeChannel(this.app, channel, fnName)
   }
 
-  publish(name, data) {
+  async publish(name, data) {
     return Utils.publish(this.app, name, data)
   }
 
@@ -53,8 +53,8 @@ export class PgPubsubSpool extends ExtensionSpool {
     return Utils.subscribe(this.app, name, fn)
   }
 
-  unsubscribe(name) {
-    return Utils.unsubscribe(this.app, name)
+  unsubscribe(channel, fnName) {
+    return Utils.unsubscribe(this.app, channel, fnName)
   }
 
   /**
@@ -83,8 +83,8 @@ export class PgPubsubSpool extends ExtensionSpool {
   /**
    * Check if there some stores, if not set a default one
    */
-  configure() {
-
+  async configure() {
+    return Utils.configure(this.app)
   }
 
   /**

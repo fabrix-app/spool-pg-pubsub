@@ -47,11 +47,13 @@ export const pgpubsub = {
 ## Usage
 
 ```js
+const sayHello = (payload) => {
+    // Do something with Payload when an event is published to channel
+    console.log(payload)
+}
 
 // Add a Channel
-this.app.spools.pgpubsub.addChannel(name, (payload) => {
-  // Do something with Payload when an event is published to channel
-})
+this.app.spools.pgpubsub.subscribe(name, sayHello)
 
 
 // Publish to the Channel
@@ -59,7 +61,7 @@ this.app.spools.pgpubsub.publish(name, data)
 
 
 // Completely rid the channel
-this.app.spools.pgpubsub.removeChannel(name)
+this.app.spools.pgpubsub.unsubscribe(name, sayHello)
 ```
 
 [npm-image]: https://img.shields.io/npm/v/@fabrix/spool-pgpubsub.svg?style=flat-square

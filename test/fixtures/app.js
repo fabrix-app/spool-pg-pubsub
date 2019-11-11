@@ -11,7 +11,7 @@ module.exports = {
   },
   config: {
     pgpubsub: {
-      uri: 'postgres://scott@localhost/pgpubsub',
+      uri: process.DATABASE_URL || 'postgres://postgres:postgres@localhost:5432/pubsub',
     },
     main: {
       spools: [

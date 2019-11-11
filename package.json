@@ -36,7 +36,7 @@
   ],
   "dependencies": {
     "joi": "^14.3.1",
-    "pg-pubsub": "^0.5.0"
+    "pg-listen": "^1.5.0"
   },
   "devDependencies": {
     "@fabrix/fabrix": "^1.6.4",
