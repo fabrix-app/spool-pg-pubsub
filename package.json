@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/spool-pgpubsub",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Spool: PgPubsub for Fabrix to implement HashiCorp's https://pgpubsubproject.io/",
   "homepage": "https://fabrix.app",
   "author": {
